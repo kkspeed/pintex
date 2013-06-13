@@ -6,13 +6,14 @@ Beamer + Pinpoint
 
 Introduction
 ------
-Beamer is a great LaTeX package to rapidly make professional slides. Yet, when 
-compiled to PDF, it lacks support for fancy animation, text overlay, embeded 
-videos etc.
+([Beamer](https://bitbucket.org/rivanvx/beamer/wiki/Home)) is a great LaTeX 
+package to rapidly make professional slides. Yet, when compiled to PDF, it lacks
+support for fancy animation, text overlay, embeded videos etc.
 
-Pinpoint, a comparatively young project aiming to become
-"A tool for making hackers do excellent presentations". Writing a pinpoint
-script is easy and painless but I really miss the flexibility Beamer gives me.
+([Pinpoint](https://live.gnome.org/Pinpoint)), a comparatively young project 
+aiming to become "A tool for making hackers do excellent presentations". Writing 
+a pinpoint script is easy and painless but I really miss the flexibility Beamer 
+gives me.
 
 Thus, pintex comes. It aims to make Beamer and Pinpoint work together to give
 Beamer slides more fancy effects yet preserves its flexibility in arranging text.
