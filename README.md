@@ -86,8 +86,9 @@ background in the pinpoint presentation.
 
 Note
 ------
-This project is at its very beginning and I'm just trying to make my graduate
-defense slides with it. My next steps would be:
+This project is at its very beginning and I'm just trying to make some slides
+with it to meet several deadlines. Thus, any improvement may be delayed to a month later.
+My next steps would be:
 
 1. Provide more flexibility in configuration such as specifying LaTeX 
    implemntation
