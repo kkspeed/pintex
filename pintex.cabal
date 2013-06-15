@@ -1,0 +1,14 @@
+Name:        pintex
+Version:     0.1
+
+Synopsis:    pinpoint + latex beamer
+Description:
+    a simple program to allow writing beautiful slides
+Author:      Bruce Li
+
+Cabal-Version: >=1.2
+Build-Type:    Simple
+
+Executable pintex
+    main-is: pintex.hs
+    Build-Depends: base, filepath, regex-pcre, HSH

@@ -26,15 +26,20 @@ Compiling
 ------
 (Currently) the project only has 1 file: pintex.hs (This is my first time to 
 write actual Haskell code, feel free to point out any weakness, non-idiomatic
-style etc.). To compile it, you'll need a haskell compiler (I test with GHC).
+style etc.). To compile it, you'll need a haskell compiler (I test with GHC) and
+cabal-install. Then compile it with:
 
-    ghc pintex.hs -o pintex
+    cabal configure
+    cabal build
 
-Also, you'll need the following dependencies:
+The executable will be made in dist/build/pintex, you can copy it to your PATH or
+run 
+    cabal install
 
-1. HSH: provide shell functionality.
+and it will install the package to ~/.cabal/bin
 
-2. regex-pcre: provide Perl style regex implementation.
+You should also copy additional transitions to /usr/share/pinpoint/ 
+    cp transitions/*.json /usr/share/pinpoint/
 
 Usage
 ------

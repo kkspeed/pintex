@@ -24,7 +24,7 @@ parse :: Int -> Bool -> [String] -> String
 parse slides inframe remains@(l:ls)
     | l =~ "^\\\\begin\\{frame\\}" = (emitFrameOpen slides l "") ++
            (parse slides True ls)
-    | l =~ "\\\\pause" = (emitFrameOpen (slides+1) l "[transition=still]") ++
+    | l =~ "\\\\pause" = (emitFrameOpen (slides+1) l "[transition=text-still]") ++
            (parse (slides+1) True ls)
     | l =~ "^\\\\end\\{frame\\}" = parse (slides+1) False ls
     | l =~ "^\\s*$" = parse slides inframe ls
