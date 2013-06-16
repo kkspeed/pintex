@@ -14,7 +14,7 @@ main = do
   runIO $ "xelatex " ++ input
   runIO $ "xelatex " ++ input
   putStrLn "Converting file ..."
-  runIO $ "convert -density 160 " ++ ((++".pdf") . dropExtensions) input ++
+  runIO $ "convert -density 140 " ++ ((++".pdf") . dropExtensions) input ++
             " presentation.png"
   putStrLn $ "Generating " ++ output ++ ".."
   text <- readFile input
