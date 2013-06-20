@@ -14,7 +14,7 @@ main = do
   runIO $ "xelatex " ++ input
   runIO $ "xelatex " ++ input
   putStrLn "Converting file ..."
-  runIO $ "convert -density 140 " ++ ((++".pdf") . dropExtensions) input ++
+  runIO $ "convert -density 130 " ++ ((++".pdf") . dropExtensions) input ++
             " presentation.png"
   putStrLn $ "Generating " ++ output ++ ".."
   text <- readFile input
@@ -48,7 +48,7 @@ parse' slides False True (l:ls)
 emitFrameOpen :: Int -> String -> String -> String
 emitFrameOpen slides l attrs
     | not . null $ attributes = "\n\n--" ++ (attributes!!0!!1) ++ attrs ++ pngFile
-    | otherwise = "\n\n--[duration=4.0][text-align=center]" ++ attrs ++ pngFile
+    | otherwise = "\n\n--[text-align=center]" ++ attrs ++ pngFile
     where attributes = l =~ "%.*pin:(.*)" :: [[String]]
           pngFile = "[presentation-" ++ (show slides) ++ ".png]\n"
 
